@@ -1,0 +1,32 @@
+{
+	"schemaVersion": 1,
+	"id": "shuffler",
+	"version": "${version}",
+	"name": "Shuffler",
+	"description": "A small mod allowing your inventory to be shuffled.",
+	"authors": [
+		"Pyxel00"
+	],
+	"contact": {
+		"homepage": "",
+		"sources": ""
+	},
+	"license": "CC0-1.0",
+	"icon": "assets/shuffler/icon.png",
+	"environment": "*",
+	"entrypoints": {
+		"client": [
+			"pyxel00.shuffler.client.ShufflerClient"
+		]
+	},
+	"mixins": [],
+	"depends": {
+		"fabricloader": ">=0.15.3",
+		"minecraft": "~1.20.4",
+		"java": ">=17",
+		"fabric-api": "*"
+	},
+	"suggests": {
+		"another-mod": "*"
+	}
+}
