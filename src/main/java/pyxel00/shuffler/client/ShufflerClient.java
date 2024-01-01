@@ -22,9 +22,7 @@ public class ShufflerClient implements ClientModInitializer {
         ClientTickEvents.END_CLIENT_TICK.register(client -> {
             while(shufflerKey.wasPressed()) {
                 ShufflerMechanic.addToTempList();
-                ShufflerMechanic.shuffleSecondToFirst();
-                ShufflerMechanic.shuffleThirdToSecond();
-                ShufflerMechanic.shuffleFourthToThird();
+                ShufflerMechanic.shuffle();
                 ShufflerMechanic.readFromTempList();
             }
         });

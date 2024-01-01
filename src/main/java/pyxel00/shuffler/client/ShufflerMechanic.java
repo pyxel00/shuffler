@@ -23,23 +23,17 @@ public class ShufflerMechanic {
         }
         temp.clear();
     }
-    public static void shuffleSecondToFirst() {
+    public static void shuffle() {
         for(int i = 27; i < 36; i++) {
             ItemStack itemStack = inventory.getStack(i);
             inventory.setStack(i - 27, itemStack);
             inventory.setStack(i, ItemStack.EMPTY);
         }
-    }
-    public static void shuffleThirdToSecond() {
         for(int i = 18; i < 27; i++) {
             ItemStack itemStack = inventory.getStack(i);
             inventory.setStack(i + 9, itemStack);
-            inventory.setStack(i, ItemStack.EMPTY); {
-
-            }
+            inventory.setStack(i, ItemStack.EMPTY);
         }
-    }
-    public static void shuffleFourthToThird() {
         for(int i = 9; i < 18; i++) {
             ItemStack itemStack = inventory.getStack(i);
             inventory.setStack(i + 9, itemStack);
